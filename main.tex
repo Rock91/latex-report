@@ -1,17 +1,16 @@
 \documentclass{article}
 
 % Language setting
-% Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
 
 % Set page size and margins
-% Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{cite}
 
 \title{Text Mining}
 \author{Ronak Sutariya}
@@ -105,5 +104,24 @@ The cosine similarity equation calculates a similarity score between two documen
 
 \section{Conclusion:}
 Text mining is a valuable technique for analyzing and extracting insights from unstructured text data. The TF-IDF and cosine similarity equations are important mathematical concepts used in text mining. These equations help to evaluate the importance of words in documents and calculate the similarity between two documents, respectively. Text mining has numerous applications in different fields, making it a growing research area.
+
+\begin{filecontents}{sample.bib}
+@article {1,
+    author  = "Berry, M. J. A, John Wiley \& Sons",
+    title   = "Data Mining Techniques",
+    journal = "Data Mining Techniques",
+    year    = "2012",
+    note    = "For Marketing, Sales, and Customer Support."
+}
+@article {2,
+    author  = "Feldman, R., \& Sanger, J.",
+    title   = "The text mining handbook",
+    journal = "The text mining handbook",
+    year    = "2007",
+    note    = "advanced approaches in analyzing unstructured data."
+}
+\end{filecontents}
+Dummy citation \cite{article, 1, 2}
+\bibliographystyle{plain}
 
 \end{document}
