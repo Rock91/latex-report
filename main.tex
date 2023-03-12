@@ -20,104 +20,90 @@
 \maketitle
 
 \begin{abstract}
-Your abstract.
+Text mining is the process of extracting useful information from unstructured text data using various techniques such as natural language processing and machine learning. This report provides an overview of text mining and its applications in different fields. It also discusses two important mathematical equations used in text mining, the TF-IDF and cosine similarity equations, along with their respective applications.
 \end{abstract}
 
 \section{Introduction}
-
-Most businesses have the opportunity to collect large volumes of text data. Customer feedback, product reviews, and social media posts are just the tip of the big data iceberg. The kind of ideas that can be derived from such sources of textual (big) data are profoundly lucrative and can help companies create products that users will value the most.
-
-Without text mining, the opportunity mentioned above is still a challenge. This is because analyzing vast amounts of data isn't something the human brain is capable of. Even if a group of people tries to pull off this Herculean task, the insights extracted might become obsolete by the time they succeed.
-
-Text mining helps companies automate the process of classifying text. The classification could be based on several attributes, including topic, intent, sentiment, and language.
+Text Mining is the process of extracting meaningful information from unstructured textual data. With the exponential growth of digital content, Text Mining has become an essential tool for information retrieval, information extraction, and knowledge discovery. Text Mining uses various techniques from Natural Language Processing (NLP), Machine Learning (ML), and Data Mining to analyze and understand textual data. In this report, we will explore the concept of Text Mining, its techniques, applications, and its importance in today's world.
 
 Many manual and tedious tasks can be eliminated with the help of text mining. Suppose you need to understand how the customers feel about a software application you offer. Of course, you can manually go through user reviews, but if there are thousands of reviews, the process becomes tedious and time-consuming.
 
-\section{Some examples to get started}
+\section{Techniques}
 
-\subsection{How to create Sections and Subsections}
+Text Mining involves various techniques to process unstructured textual data. Some of the common techniques used in Text Mining are:
 
-Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using Rich Text mode, you can also create new section and subsections via the buttons in the editor toolbar.
+\subsection{Tokenization}
 
-\subsection{How to include Figures}
+Tokenization is the process of breaking down a piece of text into smaller units, called tokens. These tokens can be individual words, phrases, or even entire sentences.
 
-First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+\subsection{Stopword Removal}
 
-Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+Stopword removal is a technique used in text mining to remove common words that are not considered useful for analysis. These words, known as stopwords, are typically very common words like "the", "and", "a", "an", "in", "is", and so on.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{frog.jpg}
-\caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
-\end{figure}
+\subsection{Stemming}
 
-\subsection{How to add Tables}
+Stemming is a technique used in text mining to reduce words to their base or root form, called a stem. This is done to group together words that have the same root, which can help in reducing the size of the vocabulary and improving the accuracy of text analysis.
 
-Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}. 
+\subsection{Lemmatization}
 
-\begin{table}
-\centering
-\begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
-\end{tabular}
-\caption{\label{tab:widgets}An example table.}
-\end{table}
+Lemmatization is a technique used in text mining to reduce words to their base form, called a lemma. Unlike stemming, which reduces words to a root form by removing prefixes and suffixes, lemmatization uses a dictionary or morphological analysis to determine the lemma of a word based on its part of speech and context.
 
-\subsection{How to add Comments and Track Changes}
+\subsection{Named Entity Recognition (NER)}
 
-Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
+Named Entity Recognition (NER) is a technique used in text mining to identify and extract named entities from unstructured text data. A named entity is a word or phrase that represents a specific object, person, place, organization, or other entity.
 
-Track changes are available on all our \href{https://www.overleaf.com/user/subscription/plans}{premium plans}, and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of every change made to the document, along with the person making the change. 
+\subsection{Sentiment Analysis}
 
-\subsection{How to add Lists}
+Sentiment analysis is a technique used in text mining to identify and extract subjective information from text data, such as opinions, emotions, and attitudes.
 
-You can make lists with automatic numbering \dots
+\subsection{Topic Modeling}
 
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
+Topic modeling is a technique used in text mining to discover hidden themes or topics in large collections of text data. The goal of topic modeling is to automatically identify the underlying topics in the text data and cluster similar documents together.
+
+\subsection{Word Embeddings}
+
+Word embeddings are a technique used in natural language processing (NLP) and text mining to represent words as vectors of numerical values in a high-dimensional space. Word embeddings are trained on large collections of text data using machine learning algorithms to capture the semantic and syntactic relationships between words.
+
+\section{Applications}
+
+Text mining has various applications in different fields such as social media, healthcare, finance, and e-commerce. For example, in healthcare, text mining can be used to extract valuable information from patient records, clinical trials, and scientific literature to improve patient care and treatment. In finance, text mining can be used to analyze news articles, social media posts, and other sources of information to predict market trends and investment opportunities. Some of the common applications of Text Mining are:
 \begin{itemize}
-\item Like this,
-\item and like this.
+\item{Customer Relationship Management (CRM)}
+
+Analyzing customer feedback and complaints to improve customer experience.
+\item{Social Media Analysis}
+
+Analyzing social media data to understand public opinion and sentiment.
+\item{Healthcare}
+
+Analyzing electronic health records to identify disease patterns and treatment outcomes.
+\item{Fraud Detection}
+
+Analyzing financial data to detect fraudulent transactions.
 \end{itemize}
 
-\subsection{How to write Mathematics}
+\section{Equations}
+\subsection{The most common equation used in Text Mining is the Term Frequency-Inverse Document Frequency (TF-IDF) equation, which is given by:}
+TF-IDF stands for term frequency-inverse document frequency. It is a statistical measure that is used to evaluate the importance of a word in a document.
+Let w is a term or word,d is a document, D is a set of all documents, TF(w,d) be the frequency of term w in document d, and IDF(w, D) be determined by log (N / n).
+let
+\[TF-IDF(w,d,D) = TF(w,d)\times{IDF(w,D)}\]
+Where N is the total number of documents and n is the number of documents containing the term w.
 
-\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i\]
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+The TF-IDF equation calculates a weight for each word in a document based on its frequency in the document and the inverse document frequency. The higher the TF-IDF value, the more important the word is in the document.
+
+\subsection{The Second most common equation used in Text Mining is the Term Cosine Similarity equation, which is given by:}
+Cosine similarity is a measure of the similarity between two documents. It is based on the cosine of the angle between two vectors in a high-dimensional space. The cosine similarity equation is as follows:
+\[cosine similarity(d1,d2) =\dfrac{(d1\times{d2})}{(\left \| d1 \right \|\times{\left \| d2 \right \|})}\]
+
+where,
+d1 and d2 are two documents.
+$\mid  \mid d1 \mid\mid$ and $\mid\mid d2 \mid\mid$ are the magnitudes of the vectors d1 and d2, respectively.
+
+The cosine similarity equation calculates a similarity score between two documents based on the angle between their vectors in a high-dimensional space. The score ranges from 0 to 1, where 1 means the documents are identical and 0 means they are completely dissimilar.
 
 
-\subsection{How to change the margins and paper size}
-
-Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
-
-If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on \href{https://www.overleaf.com/learn/latex/page_size_and_margins}{page size and margins}.
-
-\subsection{How to change the document language and spell check settings}
-
-Overleaf supports many different languages, including multiple different languages within one document. 
-
-To configure the document language, simply edit the option provided to the babel package in the preamble at the top of this example project. To learn more about the different options, please visit this help article on \href{https://www.overleaf.com/learn/latex/International_language_support}{international language support}.
-
-To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
-
-\subsection{How to add Citations and a References List}
-
-You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
-
-If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
-
-\subsection{Good luck!}
-
-We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the Contact Us link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
-
-\bibliographystyle{alpha}
-\bibliography{sample}
+\section{Conclusion:}
+Text mining is a valuable technique for analyzing and extracting insights from unstructured text data. The TF-IDF and cosine similarity equations are important mathematical concepts used in text mining. These equations help to evaluate the importance of words in documents and calculate the similarity between two documents, respectively. Text mining has numerous applications in different fields, making it a growing research area.
 
 \end{document}
